@@ -7,13 +7,13 @@
 }
 
 
-.information-services {
+.information {
    position: relative;
    padding: 73px 0 144px;
    z-index: 20;
 }
 
-.information-services::before {
+.information::before {
    content: '';
    position: absolute;
    width: 27px;
@@ -22,12 +22,14 @@
    background-size: cover;
    left: 50%;
    transform: translateX(-50%);
-   bottom: 44px;
+   bottom: 36px;
    z-index: 2;
+   border: 10px solid #fff;
+   background-color: #fff;
 
 }
 
-.information-services::after {
+.information::after {
    content: '';
    position: absolute;
    width: 100%;
@@ -39,7 +41,7 @@
 }
 
 
-.informatinon-services__inner {
+.information__inner {
    max-width: 1330px;
    width: 100%;
    margin: 0 auto;
@@ -50,7 +52,7 @@
    }
 }
 
-.information-services__title {
+.information__title {
    font-family: "Proxima Nova", sans-serif;
    font-size: 30px;
    font-weight: 900;
@@ -68,7 +70,7 @@
    }
 }
 
-.informatinon-services__content {
+.information__content {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 30px;
@@ -112,7 +114,7 @@
    color: #CE7852;
 }
 
-.informatinon-services__block {
+.information__block {
    max-width: 300px;
    width: 100%;
    display: flex;
@@ -141,27 +143,25 @@
    }
 }
 
-.informatinon-services__block:hover {
+.information__block:hover {
    transform: translateY(-5px);
    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.informatinon-services__text {
+.information__block-text {
    font-family: "Proxima Nova", sans-serif;
    font-size: 20px;
    font-weight: 700;
    color: black;
-
 
    @media (max-width:767px) {
       font-size: 16px;
       text-align: center;
 
    }
-
 }
 
-.informatinon-services__block:hover .informatinon-services__text {
+.information__block:hover .information__block-text {
    background: linear-gradient(90deg, #333, #007BFF);
    -webkit-background-clip: text;
    background-clip: text;
@@ -169,12 +169,11 @@
    background-position: 100%;
 }
 
-.informatinon-services__img {
+.information__block-img {
    @media (max-width:767px) {
       max-width: 35px;
       width: 100%;
       height: 35px;
       margin-bottom: 15px;
-
    }
 }
