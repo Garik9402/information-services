@@ -129,7 +129,7 @@
       flex-direction: column-reverse;
       align-items: center;
       justify-content: start;
-      padding: 15px;
+      padding: 12px;
    }
 
    @media (max-width:400px) {
