@@ -42,7 +42,7 @@
 
 
 .information__inner {
-   max-width: 1330px;
+   max-width: 1320px;
    width: 100%;
    margin: 0 auto;
    padding: 0 20px;
@@ -115,19 +115,14 @@
 }
 
 .information__block {
-   max-width: 300px;
-   width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 24px 21px 24px 26px;
+   padding: 16px 16px 16px 22px;
    text-decoration: none;
-   border: 2px solid #F8F3FF;
+   border: 5px solid #F8F3FF;
    transition: all 0.3s;
 
-   @media (max-width:1329px) {
-      max-width: 100%;
-   }
 
    @media (max-width:767px) {
       display: flex;
@@ -146,6 +141,7 @@
 .information__block:hover {
    transform: translateY(-5px);
    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+   border: 5px solid #fff;
 }
 
 .information__block-text {
